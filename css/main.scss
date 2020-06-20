@@ -1,0 +1,25 @@
+$containerWidth:940px;
+$baseFontSize: 16px;
+
+//normalize
+
+//setup
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+@import "layout";
+
+//components
+@import "components/hero";
+@import "components/header";
+@import "components/features";
+@import "components/hero__title-section";
+@import "components/btn";
+@import "components/section";
+@import "components/headline";
+@import "components/benefit";
+@import "components/reviews";
+@import "components/form";
+@import "components/fixed";
+@import "media";
+
+//mediaQ
+

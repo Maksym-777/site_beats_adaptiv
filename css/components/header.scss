@@ -1,0 +1,57 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo__img {
+    width: 2.63rem;
+    height: 2.63rem;
+    /* width: 42px;
+    height: 42px; */
+}
+
+.menu {
+    margin: 0 2rem;
+}
+
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu__item {
+    margin-right: 1rem;
+    /* margin-right: 15px; */
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.telephon {
+    display: flex;
+    align-items: center;
+    font-size: 1.31rem;
+}
+
+.telephon__number {
+    white-space: nowrap;
+    ;
+}
+
+.telephon__img {
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-right: 0.44rem;
+    /* width: 12px;
+    height: 12px;
+    margin-right: 7px; */
+}
+
+.menu__mobile {
+    width: 24px;
+    height: 24px;
+    display: none;
+}

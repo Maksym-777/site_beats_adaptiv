@@ -1,0 +1,235 @@
+@function rem($px) {
+    @return $px / $baseFontSize+0rem
+}
+
+
+@media screen and (max-width:768px) {
+    html {
+        font-size: 14px;
+    }
+
+    .wrapper {
+        min-width: 0;
+    }
+
+    .container {
+        width: auto;
+        max-width: 720px;
+    }
+
+    .container__hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        /*  align-items: center; */
+        text-align: center;
+    }
+
+    .hero {
+        background: url(../img/hero/headphone.png) top 25% center no-repeat;
+        background-size: 21.75rem auto;
+        background-color: #f5f5f5;
+    }
+
+    .header {
+        padding: 0;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .telephon {
+        display: none;
+        white-space: nowrap;
+    }
+
+    .menu__mobile {
+        display: block;
+    }
+
+    .hero__icons-section {
+        display: none;
+    }
+
+    .hero__title-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15%;
+    }
+
+    .hero__main-title {
+        margin-bottom: 1.68rem;
+        padding: 0 10%;
+    }
+
+    .hero__title-desc {
+        padding: 0 30%;
+        margin-bottom: 1.87rem;
+    }
+
+    /*  ------------------ section  */
+    .container__benefit {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .benefits__item::before {
+        display: none;
+    }
+
+    .benefit__title {
+        font-size: 1.5rem;
+    }
+
+    .headline__sub {
+        padding: 0 5%;
+    }
+
+    /* ---------------- section reviews -----------*/
+    .container__reviews {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .reviews__display {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reviews__display-inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .reviews__avatar {
+        height: 8.12rem;
+        width: 8.12rem;
+        margin: 0 0 2rem 0;
+    }
+
+    .reviews__content {
+        text-align: center;
+    }
+
+    .reviews__switcher-item {
+        width: 3.75rem;
+        height: 3.75rem;
+    }
+
+    /* -------------- section form */
+    .container__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+
+    }
+
+    .section__form {
+        background-image: url(../img/reviews/vektornyy_smart.png);
+        background-size: cover;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form__col {
+
+        margin-right: 0;
+        padding: 0 20%;
+
+    }
+
+    .form__input {
+        width: 100%;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .form__btn {
+        text-align: center;
+    }
+
+    .fixed-section {
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+    /* html {
+        font-size: 13px;
+    } */
+
+    .container {
+        width: auto;
+        max-width: 420px;
+    }
+
+    .hero {
+        background: url(../img/hero/headphone.png) top 20% center no-repeat;
+        background-size: 18.4rem auto;
+        background-color: #f5f5f5;
+    }
+
+    .hero__main-title {
+        margin-bottom: 1.68rem;
+        padding: 0 5%;
+        font-size: 2.25rem;
+    }
+
+    .hero__title-desc {
+        padding: 0px 18%;
+    }
+
+    .section__title {
+        font-size: 2.25rem;
+    }
+
+    .benefits__list {
+
+        flex-direction: column;
+    }
+
+    .benefit__block {
+        display: flex;
+    }
+
+    .benefit__title,
+    .benefit__desc {
+        text-align: left;
+    }
+
+    .benefit__img {
+        margin-right: 1.5rem
+    }
+
+    .reviews__avatar {
+        height: 7.5rem;
+        width: 7.5rem;
+    }
+
+
+    .form__col {
+        padding: 0;
+    }
+
+    .form__row:last-child {
+        margin-bottom: 1.31rem;
+    }
+
+    .form__controls {
+        justify-content: center;
+    }
+
+}

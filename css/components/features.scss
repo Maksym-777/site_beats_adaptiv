@@ -1,0 +1,30 @@
+.hero__icons-list {
+    display: flex;
+    align-items: center;
+}
+
+.hero__icons-item {
+    display: flex;
+    margin-right: 2.81rem;
+    /* margin-right: 45px; */
+    position: relative;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.icon-img {
+    width: 2.75rem;
+    height: 2.75rem;
+    margin-right: 0.5rem;
+    /* width: 44px;
+    height: 44px;
+    margin-right: 8px; */
+}
+
+.hero__icons-text {
+    font-size: 1rem;
+    font-weight: 400;
+    max-width: 100px;
+}

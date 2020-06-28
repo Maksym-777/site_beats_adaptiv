@@ -14,7 +14,7 @@
 
     .container {
         width: auto;
-        max-width: 720px;
+        max-width: 95%;
     }
 
     .container__hero {
@@ -45,7 +45,7 @@
         white-space: nowrap;
     }
 
-    .menu__mobile {
+    .menu-mobile__block {
         display: block;
     }
 
@@ -92,6 +92,67 @@
         padding: 0 5%;
     }
 
+    /* ---------------- section slider -----------*/
+
+    .container__slider {
+        padding-top: 10%;
+        flex-direction: column;
+    }
+
+    .arrow {
+        display: none;
+    }
+
+    .arrow__small {
+        display: block;
+    }
+
+    .slider__image {
+        display: flex;
+        align-items: center;
+        margin-right: 0;
+        width: 65%;
+    }
+    
+    .slider__img {
+        padding: 0 2rem;
+    }
+
+    .text-menu__wrapper {
+        display: none;
+    }
+
+    .text-tile {
+        font-size: 30px;
+    }
+
+    .slider__text-block {
+        text-align: center;
+    }
+
+    .text-specific__block {
+        flex: 1;
+    }
+
+    .text-specific__block--left {
+        text-align: left;
+    }
+
+    .text-specific__block--right {
+        text-align: right;
+    }
+
+    .text-price__cost {
+        flex: 1;
+        text-align: right;
+    }
+
+    .text-price__btn {
+        flex: 1;
+        text-align: left;
+    }
+
+   
     /* ---------------- section reviews -----------*/
     .container__reviews {
         display: flex;
@@ -173,7 +234,7 @@
 
     .container {
         width: auto;
-        max-width: 420px;
+        max-width: 95%;
     }
 
     .hero {
@@ -211,9 +272,24 @@
     }
 
     .benefit__img {
-        margin-right: 1.5rem
-    }
+        margin-right: 1.5rem;
 
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+ /* --------------------section slider------------------------------- */
+    
+ .slider__image {
+    
+    width: 95%;
+}
+
+.slider__img {
+    padding: 0 2rem;
+}
+
+/////////////////////////////////
     .reviews__avatar {
         height: 7.5rem;
         width: 7.5rem;

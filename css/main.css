@@ -118,10 +118,55 @@ img {
   height: 12px;
   margin-right: 7px; */ }
 
-.menu__mobile {
+.phone-ico {
+  width: 0.75rem;
+  height: 0.75rem;
+  fill: red; }
+
+.menu-mobile__block {
   width: 24px;
   height: 24px;
   display: none; }
+
+.menu-mobile {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(47, 50, 52, 0.98);
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 20%;
+  display: none; }
+
+.menu_open {
+  display: block;
+  z-index: 1; }
+
+.menu-mobile__list {
+  width: 100%; }
+
+.menu-mobile__item {
+  font-size: 2.25rem;
+  line-height: 72px;
+  font-weight: 400;
+  color: #ffffff;
+  margin: 0.4rem 0; }
+
+.menu-mobile__links {
+  display: block;
+  transition: 0.3s; }
+  .menu-mobile__links:hover {
+    background-color: rgba(25, 25, 97, 0.445); }
+
+.menu-mobile__item--close {
+  position: absolute;
+  top: 30px;
+  right: 30px; }
 
 .hero__icons-list {
   display: flex;
@@ -147,6 +192,133 @@ img {
   font-size: 1rem;
   font-weight: 400;
   max-width: 100px; }
+
+.section__slider {
+  background-color: #f5f5f5; }
+
+.container__slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%; }
+
+.arrow,
+.arrow {
+  width: 7%;
+  display: flex;
+  justify-content: center; }
+
+.arrow__small {
+  display: none; }
+
+.slider__image {
+  width: 40%;
+  margin-right: 2rem; }
+
+.text-menu__wrapper {
+  width: 6rem;
+  height: 6rem;
+  background-color: #6e6e6e;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 1.5rem;
+  position: relative;
+  cursor: pointer;
+  transition: 2s; }
+  .text-menu__wrapper:hover .slider-menu {
+    display: block; }
+
+.text-menu__gear {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.slider__text-block {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10% 0; }
+
+.text-tile {
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 1.6rem; }
+
+.slider__text-description {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #666666;
+  margin-bottom: 3rem; }
+
+.text-specific__wrapper {
+  display: flex;
+  margin-bottom: 4rem; }
+
+.specific__title {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #666666;
+  margin-bottom: 0.3rem; }
+
+.specific__text {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #000000; }
+
+.text-specific__block {
+  display: flex;
+  flex-direction: column;
+  margin-right: 6rem; }
+  .text-specific__block:last-child {
+    margin-right: 0; }
+
+.slider__text-price {
+  display: flex;
+  align-items: center; }
+
+.text-price__cost {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #0d0d0d;
+  margin-right: 1.5rem; }
+
+.slider-menu {
+  position: absolute;
+  left: 6rem;
+  background-color: rgba(255, 250, 250, 0.97);
+  width: 17rem;
+  padding: 1rem;
+  display: none; }
+
+.slider-menu__block {
+  display: flex;
+  align-items: center; }
+
+.slider-menu__ico {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1.5rem; }
+
+.value {
+  flex: 1;
+  text-align: right; }
+
+.slider-menu__items {
+  margin-bottom: 1rem; }
+
+.va {
+  text-align: right; }
 
 .hero__title-section {
   width: 46%; }
@@ -554,7 +726,7 @@ img {
 
   .container {
     width: auto;
-    max-width: 720px; }
+    max-width: 95%; }
 
   .container__hero {
     display: flex;
@@ -579,7 +751,7 @@ img {
     display: none;
     white-space: nowrap; }
 
-  .menu__mobile {
+  .menu-mobile__block {
     display: block; }
 
   .hero__icons-section {
@@ -616,6 +788,52 @@ img {
 
   .headline__sub {
     padding: 0 5%; }
+
+  /* ---------------- section slider -----------*/
+  .container__slider {
+    padding-top: 10%;
+    flex-direction: column; }
+
+  .arrow {
+    display: none; }
+
+  .arrow__small {
+    display: block; }
+
+  .slider__image {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    width: 65%; }
+
+  .slider__img {
+    padding: 0 2rem; }
+
+  .text-menu__wrapper {
+    display: none; }
+
+  .text-tile {
+    font-size: 30px; }
+
+  .slider__text-block {
+    text-align: center; }
+
+  .text-specific__block {
+    flex: 1; }
+
+  .text-specific__block--left {
+    text-align: left; }
+
+  .text-specific__block--right {
+    text-align: right; }
+
+  .text-price__cost {
+    flex: 1;
+    text-align: right; }
+
+  .text-price__btn {
+    flex: 1;
+    text-align: left; }
 
   /* ---------------- section reviews -----------*/
   .container__reviews {
@@ -678,7 +896,7 @@ img {
   } */
   .container {
     width: auto;
-    max-width: 420px; }
+    max-width: 95%; }
 
   .hero {
     background: url(../img/hero/headphone.png) top 20% center no-repeat;
@@ -708,6 +926,15 @@ img {
 
   .benefit__img {
     margin-right: 1.5rem; }
+    .benefit__img:last-child {
+      margin-bottom: 0; }
+
+  /* --------------------section slider------------------------------- */
+  .slider__image {
+    width: 95%; }
+
+  .slider__img {
+    padding: 0 2rem; }
 
   .reviews__avatar {
     height: 7.5rem;

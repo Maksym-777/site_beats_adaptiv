@@ -108,8 +108,9 @@
 
 }
 
-.menu-mobile__item--close {
+.menu-mobile__close {
     position: absolute;
     top: 30px;
     right: 30px;
+    cursor: pointer;
 }

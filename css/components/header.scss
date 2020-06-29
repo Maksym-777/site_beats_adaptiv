@@ -75,13 +75,9 @@
     display: flex;
     justify-content: center;
     padding-top: 20%;
+    visibility: hidden;
 
-    display: none;
-}
-
-.menu_open {
-    display: block;
-    z-index: 1;
+    /*  display: none; */
 }
 
 .menu-mobile__list {
@@ -109,6 +105,7 @@
 }
 
 .menu-mobile__close {
+    display: block;
     position: absolute;
     top: 30px;
     right: 30px;

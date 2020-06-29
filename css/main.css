@@ -141,11 +141,8 @@ img {
   display: flex;
   justify-content: center;
   padding-top: 20%;
-  display: none; }
-
-.menu_open {
-  display: block;
-  z-index: 1; }
+  visibility: hidden;
+  /*  display: none; */ }
 
 .menu-mobile__list {
   width: 100%; }
@@ -164,6 +161,7 @@ img {
     background-color: rgba(25, 25, 97, 0.445); }
 
 .menu-mobile__close {
+  display: block;
   position: absolute;
   top: 30px;
   right: 30px;

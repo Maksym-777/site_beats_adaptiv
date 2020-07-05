@@ -113,7 +113,7 @@
         margin-right: 0;
         width: 65%;
     }
-    
+
     .slider__img {
         padding: 0 2rem;
     }
@@ -152,7 +152,7 @@
         text-align: left;
     }
 
-   
+
     /* ---------------- section reviews -----------*/
     .container__reviews {
         display: flex;
@@ -278,18 +278,19 @@
             margin-bottom: 0;
         }
     }
- /* --------------------section slider------------------------------- */
-    
- .slider__image {
-    
-    width: 95%;
-}
 
-.slider__img {
-    padding: 0 2rem;
-}
+    /* --------------------section slider------------------------------- */
 
-/////////////////////////////////
+    .slider__image {
+
+        width: 95%;
+    }
+
+    .slider__img {
+        padding: 0 2rem;
+    }
+
+    /////////////////////////////////
     .reviews__avatar {
         height: 7.5rem;
         width: 7.5rem;

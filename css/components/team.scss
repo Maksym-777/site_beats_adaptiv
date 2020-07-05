@@ -1,0 +1,72 @@
+.team__title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+    margin: 4.5rem 0 3.5rem 0;
+}
+
+.team_block {
+    margin-bottom: 5%;
+}
+
+.team__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team__item {
+    width: 23.5%;
+
+}
+
+.team__desc {
+    text-align: center;
+}
+
+.team__avatar {
+    margin-bottom: 1.5rem;
+}
+
+.team__name {
+    font-size: 1.12rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 1rem;
+    cursor: pointer;
+
+    &::after {
+        content: url(../img/icons/polygon.svg);
+        display: inline-block;
+        margin-left: 0.3rem;
+
+    }
+}
+
+.team__name--active {
+    color: yellowgreen;
+
+    &::after {
+        transform: rotate(180deg);
+    }
+}
+
+.team__accordion {
+
+    display: none;
+}
+
+.team__prof {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #281e1e;
+    margin-bottom: 1.12rem;
+}
+
+.team__prof--desc {
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #666666;
+}

@@ -126,7 +126,10 @@ img {
 .menu-mobile__block {
   width: 24px;
   height: 24px;
-  display: none; }
+  display: none;
+  position: fixed;
+  top: 3%;
+  right: 3%; }
 
 .menu-mobile {
   width: 100%;
@@ -152,7 +155,8 @@ img {
   line-height: 72px;
   font-weight: 400;
   color: #ffffff;
-  margin: 0.4rem 0; }
+  margin: 0.4rem 0;
+  text-align: center; }
 
 .menu-mobile__links {
   display: block;
@@ -213,6 +217,9 @@ img {
 .slider__image {
   width: 40%;
   margin-right: 2rem; }
+
+.sl__img {
+  width: 100%; }
 
 .text-menu__wrapper {
   width: 6rem;
@@ -491,6 +498,11 @@ img {
   display: flex;
   align-items: center; }
 
+/* .reviews__item{
+    opacity: 0;
+}
+.reviews__item--active{
+    opacity: 1;} */
 .reviews__avatar {
   height: 15.8rem;
   width: 16.25rem;
@@ -536,7 +548,8 @@ img {
   margin-right: 0.68rem;
   /* margin-right: 11px; */
   border: 4px solid transparent;
-  border-radius: 50%; }
+  border-radius: 50%;
+  cursor: pointer; }
   .reviews__switcher-item:last-child {
     margin-right: 0px; }
   .reviews__switcher-item--active {
@@ -947,5 +960,62 @@ img {
 
   .form__controls {
     justify-content: center; } }
+.team__title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  margin: 4.5rem 0 3.5rem 0; }
+
+.team_block {
+  margin-bottom: 5%; }
+
+.team__list {
+  display: flex;
+  justify-content: space-between; }
+
+.team__item {
+  width: 23.5%; }
+
+.team__desc {
+  text-align: center; }
+
+.team__avatar {
+  margin-bottom: 1.5rem; }
+
+.team__name {
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 1rem;
+  cursor: pointer; }
+  .team__name::after {
+    content: url(../img/icons/polygon.svg);
+    display: inline-block;
+    margin-left: 0.3rem; }
+
+.team__name--active {
+  color: yellowgreen; }
+  .team__name--active::after {
+    transform: rotate(180deg); }
+
+.team__accordion {
+  display: none; }
+
+.team__prof {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #281e1e;
+  margin-bottom: 1.12rem; }
+
+.team__prof--desc {
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #666666; }
+
+.modal {
+  display: none; }
 
 /*# sourceMappingURL=main.css.map */

@@ -51,17 +51,18 @@
 
 .team__name--active {
     color: yellowgreen;
-
+    
     &::after {
         transform: rotate(180deg);
     }
 }
 
 .team__accordion {
-
-    /* display: none; */
+    display: none;
 }
-
+.team__accordion--active{
+    display: block;
+}
 .team__prof {
     font-size: 1rem;
     font-weight: 400;

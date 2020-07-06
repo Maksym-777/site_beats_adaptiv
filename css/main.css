@@ -865,7 +865,8 @@ img {
     display: none; }
 
   .team__accordion--show {
-    display: block; }
+    display: block;
+    color: yellowgreen; }
 
   .team__accordion {
     margin-bottom: 1rem; }
@@ -1032,7 +1033,10 @@ img {
     transform: rotate(180deg); }
 
 .team__accordion {
-  /* display: none; */ }
+  display: none; }
+
+.team__accordion--active {
+  display: block; }
 
 .team__prof {
   font-size: 1rem;

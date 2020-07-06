@@ -5,20 +5,20 @@ const menuMobile = document.querySelector(".menu-mobile");
 
 burgerMenu.addEventListener('click', function (e) {
   e.preventDefault();
-  /* menuMobile.style.display = 'block'; */
   menuMobile.style.visibility = 'visible';
 });
 
 closeMenu.addEventListener('click', function (e) {
   e.preventDefault();
-  /* menuMobile.style.display = 'none'; */
   menuMobile.style.visibility = 'hidden';
 
 });
 
 
 /* --------- accordeon --------------- */
-
+$(function () {
+  $("#accordion").accordion();
+});
 
 $(document).ready(function () {
 
@@ -29,9 +29,16 @@ $(document).ready(function () {
     $(".team__block--mobile").show();
   }
 
-  $('.team__name').click(function () {
-    $(this).next().slideToggle("slow");
-    $(this).toggleClass('team__name--active');
+  $('.team__name').on("click", function (ever) {
+    $this = $(event.target);
+    $('.team__accordion--active').removeClass("team__accordion--active");
+    $('.team__name--active').removeClass("team__name--active");
+    $this.next().addClass("team__accordion--active");
+    $this.addClass("team__name--active");
+
+    /*  $('.team__name').click(function () {
+       $(this).next().slideToggle("slow");
+       $(this).toggleClass('team__name--active'); */
 
     /* $(this).next().toggleClass('team__accordion--active');
     $(this).toggleClass('team--active') */

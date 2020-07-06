@@ -45,7 +45,7 @@
         white-space: nowrap;
     }
 
-    .menu-mobile__block {
+    .menu-mobile__ {
         display: block;
     }
 
@@ -99,12 +99,22 @@
         flex-direction: column;
     }
 
-    .arrow {
-        display: none;
+    #my-arrow-prev {
+        /* display: none; */
+        position: absolute;
+        top: 30%;
+        left: 10%;
+    }
+
+    #my-arrow-next {
+        position: absolute;
+        top: 30%;
+        right: 10%;
     }
 
     .arrow__small {
-        display: block;
+        /* display: block; */
+        visibility: visible;
     }
 
     .slider__image {

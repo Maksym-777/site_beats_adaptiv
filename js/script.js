@@ -16,6 +16,9 @@ closeMenu.addEventListener('click', function (e) {
 
 });
 
+
+/* --------- slider --------------- */
+
 $(document).ready(function () {
   $('.team__name').click(function () {
     $(this).next().slideToggle("slow");
@@ -30,8 +33,8 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('.slider__image').slick({
     nextArrow: document.querySelector('#my-arrow-next'),
-    prevArrow: document.querySelector('#my-arrow-prev')
-  });
+    prevArrow: document.querySelector('#my-arrow-prev'),
+      });
 });
 
 

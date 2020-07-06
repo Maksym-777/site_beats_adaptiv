@@ -17,25 +17,38 @@ closeMenu.addEventListener('click', function (e) {
 });
 
 
-/* --------- slider --------------- */
+/* --------- accordeon --------------- */
+
 
 $(document).ready(function () {
+
+  $(".team__block--mobile").hide();
+  if (window.matchMedia('(max-width: 768px)').matches) {
+    $(".team__item").css("width", "60%");
+    $(".team__block--pc").hide();
+    $(".team__block--mobile").show();
+  }
+
   $('.team__name').click(function () {
     $(this).next().slideToggle("slow");
-    $(this).toggleClass('team__name--active')
+    $(this).toggleClass('team__name--active');
 
     /* $(this).next().toggleClass('team__accordion--active');
     $(this).toggleClass('team--active') */
   });
 })
 
+/* --------- slider --------------- */
 
 $(document).ready(function () {
   $('.slider__image').slick({
     nextArrow: document.querySelector('#my-arrow-next'),
     prevArrow: document.querySelector('#my-arrow-prev'),
-      });
+  });
 });
+
+///////////////////////////////////////////
+
 
 
 
@@ -45,6 +58,3 @@ $(".reviews .reviews__switcher-item").click(function () {
   $(".reviews .reviews__switcher-item").removeClass("reviews__switcher-item--active").eq($(this).index()).addClass("reviews__switcher-item--active");
   $(".reviews__item").hide().eq($(this).index()).fadeIn()
 }).eq(0).addClass("reviews__switcher-item--active");
-
-
-

@@ -208,7 +208,8 @@ img {
 .arrow {
   width: 7%;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  cursor: pointer; }
 
 .arrow__small {
   /* display: none; */
@@ -856,6 +857,25 @@ img {
     flex: 1;
     text-align: left; }
 
+  /* ---------------- section team -----------*/
+    /*  .team__block--pc {
+        display: none;
+    }
+
+   .team__block--mobile {
+        visibility: visible;
+    } */
+  .team__img {
+    margin: 0 auto; }
+
+  .team__accordion {
+    margin-bottom: 1rem; }
+
+  .team__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
   /* ---------------- section reviews -----------*/
   .container__reviews {
     display: flex;
@@ -969,6 +989,9 @@ img {
 
   .form__controls {
     justify-content: center; } }
+/* .team__block--mobile {
+    visibility: hidden;
+} */
 .team__title {
   font-size: 3rem;
   font-weight: 700;
@@ -977,7 +1000,7 @@ img {
   text-align: center;
   margin: 4.5rem 0 3.5rem 0; }
 
-.team_block {
+.team__block {
   margin-bottom: 5%; }
 
 .team__list {

@@ -858,15 +858,14 @@ img {
     text-align: left; }
 
   /* ---------------- section team -----------*/
-    /*  .team__block--pc {
-        display: none;
-    }
-
-   .team__block--mobile {
-        visibility: visible;
-    } */
   .team__img {
     margin: 0 auto; }
+
+  .team__accordion {
+    display: none; }
+
+  .team__accordion--show {
+    display: block; }
 
   .team__accordion {
     margin-bottom: 1rem; }
@@ -1033,7 +1032,7 @@ img {
     transform: rotate(180deg); }
 
 .team__accordion {
-  display: none; }
+  /* display: none; */ }
 
 .team__prof {
   font-size: 1rem;

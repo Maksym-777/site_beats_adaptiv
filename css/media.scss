@@ -164,15 +164,18 @@
 
 
     /* ---------------- section team -----------*/
-    /*  .team__block--pc {
+
+    .team__img {
+        margin: 0 auto;
+    }
+
+    .team__accordion {
+
         display: none;
     }
 
-   .team__block--mobile {
-        visibility: visible;
-    } */
-    .team__img {
-        margin: 0 auto;
+    .team__accordion--show {
+        display: block;
     }
 
     .team__accordion {

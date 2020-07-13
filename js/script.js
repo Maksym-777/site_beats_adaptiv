@@ -15,10 +15,14 @@ closeMenu.addEventListener('click', function (e) {
 });
 
 
-/* --------- accordeon --------------- */
-$(function () {
-  $("#accordion").accordion();
-});
+/* --------- accordeon color --------------- */
+
+
+
+
+/* --------- accordeon team --------------- */
+
+
 
 $(document).ready(function () {
 
@@ -45,6 +49,8 @@ $(document).ready(function () {
   });
 })
 
+
+
 /* --------- slider --------------- */
 
 $(document).ready(function () {
@@ -54,10 +60,9 @@ $(document).ready(function () {
   });
 });
 
-///////////////////////////////////////////
 
 
-
+/* ----------- reviews ------------ */
 
 $(".reviews__item").not(":first").hide();
 

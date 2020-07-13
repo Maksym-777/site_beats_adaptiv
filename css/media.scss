@@ -167,6 +167,7 @@
 
     .team__img {
         margin: 0 auto;
+        margin-bottom: 1rem;
     }
 
     .team__accordion {
@@ -179,14 +180,15 @@
         color: yellowgreen;
     }
 
-    .team__accordion {
-        margin-bottom: 1rem;
-    }
-
     .team__list {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    /* ---------------- section accordeon -----------*/
+    .accordeon__item {
+        z-index: 1;
     }
 
     /* ---------------- section reviews -----------*/
@@ -220,6 +222,18 @@
     .reviews__switcher-item {
         width: 3.75rem;
         height: 3.75rem;
+    }
+
+    /* ---------------- section player -----------*/
+
+    .player {
+        width: 595px;
+        height: 331px;
+    }
+
+    .player__controls {
+        width: 593px;
+        height: 31px;
     }
 
     /* -------------- section form */
@@ -258,6 +272,10 @@
     }
 
     .fixed-section {
+        display: none;
+    }
+
+    .dots {
         display: none;
     }
 }

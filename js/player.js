@@ -13,6 +13,7 @@ function intializePlayer() {
     // Add event listeners
     playbtn.addEventListener("click", playPause, false);
     seekslider.addEventListener("change", vidSeek, false);
+
     vid.addEventListener("timeupdate", seektimeupdate, false);
     mutebtn.addEventListener("click", vidmute, false);
     volumeslider.addEventListener("change", setvolume, false);
@@ -91,49 +92,15 @@ function toggleFullScreen() {
 }
 
 
+/* var $slider = $('#seekslider');
+var $fill = $('.bar .fill');
 
+function setBar() {
+    $fill.css('width', $slider.val() + '%');
+};
 
-
-/* function intializePlayer() {
-    
-    let stop = document.getElementById('stop');
-    let btn = document.getElementById('btn');
-    let seekslider = document.getElementById("seekslider")
-
-
-    seekslider.addEventListener("change", vidSeek, false);
-
-}
-
-window.onload = intializePlayer; */
-
-
-/* function playPause() {
-    var vid = document.getElementById('my_video')
-    if (vid.paused) {
-        vid.play();
-        $('#stop').hide();
-        $('#btn').show();
-
-    } else {
-        vid.pause();
-        $('#stop').show();
-        $('#btn').hide();
-    }
-} */
-
-/* function vidSeek() {
-    var seekto = vid.duration * (seekslider.value / 100);
-    vid.currentTime = seekto;
-    alert.seekto
-}
-
-function seektimeupdate() {
-    var nt = vid.currentTime * (100 / vid.duration);
-    seekslider.value = nt;
-} */
-
-
+$slider.on('input', setBar);
+setBar(); */
 
 
 

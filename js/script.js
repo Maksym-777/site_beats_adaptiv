@@ -14,15 +14,7 @@ closeMenu.addEventListener('click', function (e) {
 
 });
 
-
-/* --------- accordeon color --------------- */
-
-
-
-
 /* --------- accordeon team --------------- */
-
-
 
 $(document).ready(function () {
 
@@ -33,12 +25,14 @@ $(document).ready(function () {
     $(".team__block--mobile").show();
   }
 
-  $('.team__name').on("click", function (ever) {
+ /*  $('.team__name').on("click", function (ever) {
     $this = $(event.target);
     $('.team__accordion--active').removeClass("team__accordion--active");
     $('.team__name--active').removeClass("team__name--active");
     $this.next().addClass("team__accordion--active");
-    $this.addClass("team__name--active");
+    $this.addClass("team__name--active"); */
+
+
 
     /*  $('.team__name').click(function () {
        $(this).next().slideToggle("slow");
@@ -46,7 +40,25 @@ $(document).ready(function () {
 
     /* $(this).next().toggleClass('team__accordion--active');
     $(this).toggleClass('team--active') */
-  });
+  /* }); */
+
+  var add = $('.team__accordion');
+    var add2 = $('.team__name');
+    $('.team__name').on("click", function (e) {
+  
+  
+      if (!$(this).next().hasClass('team__accordion--active')) {
+        add.removeClass('team__accordion--active');
+        add2.removeClass('team__name--active');
+        
+        $(this).next().addClass('team__accordion--active');
+        $(this).addClass("team__name--active")
+      } else {
+        add.removeClass('team__accordion--active');
+  
+      }
+  
+    })
 })
 
 

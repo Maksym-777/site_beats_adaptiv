@@ -3,6 +3,13 @@
     min-height: 40.2rem;
 }
 
+.container__benefit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh
+}
+
 .benefits__list {
     display: flex;
     text-align: center;
@@ -35,7 +42,7 @@
     margin-bottom: 2.18rem;
 
     /*  margin-bottom: 35px; */
-       
+
 }
 
 .benefit__img-wrapper {

@@ -1,3 +1,10 @@
+.container__reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh
+}
+
 .reviews__display {
     background-color: #f5f5f5;
     padding: 3.12rem 2.8rem 2.18rem 2.8rem;

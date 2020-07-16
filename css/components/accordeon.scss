@@ -5,6 +5,7 @@
     background-position: center;
     display: flex;
     justify-content: flex-end;
+    position: relative;
 }
 
 .container__accordeon {
@@ -20,8 +21,8 @@
 
 .accordeon__main-title {
     position: absolute;
-    left: 2rem;
-    top: 2rem;
+    left: 8rem;
+    top: 6.25rem;
     font-size: 48px;
     font-weight: 700;
     text-transform: uppercase;

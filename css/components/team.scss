@@ -2,6 +2,10 @@
     visibility: hidden;
 } */
 
+.container__team {
+    padding-top: 3rem;
+
+}
 
 .team__title {
     font-size: 3rem;
@@ -9,7 +13,6 @@
     text-transform: uppercase;
     color: #000000;
     text-align: center;
-    /* margin: 4.5rem 0 3.5rem 0; */
 }
 
 .team__block {
@@ -51,7 +54,7 @@
 
 .team__name--active {
     color: yellowgreen;
-    
+
     &::after {
         transform: rotate(180deg);
     }
@@ -60,9 +63,11 @@
 .team__accordion {
     display: none;
 }
-.team__accordion--active{
+
+.team__accordion--active {
     display: block;
 }
+
 .team__prof {
     font-size: 1rem;
     font-weight: 400;
